@@ -1,0 +1,17 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.modal-body{
+    display: flex;
+    flex-direction: column;
+}
+.rnd-image {
+    display: flex;
+    justify-content: center;
+}
+.rnd-image img{
+    max-width: 300px;
+    max-height: 300px;
+    border-radius: 50% !important;
+}
