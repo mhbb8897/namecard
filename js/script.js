@@ -70,9 +70,11 @@ function foxImages(numberId) {
 
     return `<div class="rnd-image text-center">${imgHTML}</div>;
             <ul class="list-group mt-2">
-                <li class="list-group-item active">${selectedUser.firstname} ${selectedUser.lastname}</li>
+                <li class="list-group-item active text-center">${selectedUser.firstname} ${selectedUser.lastname}</li>
+                <li class="list-group-item">Tanggal lahir: ${selectedUser.birthDate}</li>
+                <li class="list-group-item">Alamat: ${selectedUser.address.street}, ${selectedUser.address.city}, ${selectedUser.address.zipcode} </li>
                 <li class="list-group-item">Perusahaan: ${selectedUser.company.name}</li>
-                <li class="list-group-item">Catchphrase: ${selectedUser.company.catchPhrase}</li>
+                <li class="list-group-item">Slogan: ${selectedUser.company.catchPhrase}</li>
                 <li class="list-group-item">Email: ${selectedUser.email}</li>
                 <li class="list-group-item">Telepon: ${selectedUser.phone}</li>
             </ul>`
