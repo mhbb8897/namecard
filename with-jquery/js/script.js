@@ -66,7 +66,6 @@ function showCards(e) {
 function foxImages(numberId) {
     const imgHTML = `<img src="https://randomfox.ca/images/${numberId}.jpg" alt="Random Fox Image" class="rounded text-center"> `;
     const selectedUser = usersData.find(user => user.id.toString() === numberId);
-    console.log(numberId);
 
     return `<div class="rnd-image text-center">${imgHTML}</div>;
             <ul class="list-group mt-2">
